@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;1,200&display=swap');
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .imagenes {
+        padding: 0 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Declaro variables con colores*/
+:root{
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+    /*Con esta linea de height hago que el degradado ocupe toda la altura disponible*/
+    height: 100vh;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.container{
+    /*Le doy un ancho y alto al contenedor*/    
+    width: 80%;
+    height: auto;
+    /*Centro el elemento*/
+    margin: auto;
+    /*Ancho maximo para que no se pegue a los bordes cuando achico la pantalla*/
+    max-width: 100%;
+    /* background-color: var(--green); */
+    border: solid 1px var(--blue-dark);
+    border-radius: 20px;
+}
+
+/* Imagenes */
+
+.image-container{
+    margin: 5px;
+    padding: 5px;
+    border: solid 3px var(--blue-dark);
+    border-radius: 15px;
+}
+
+.imagenFinal{
+    margin: 5px 10px 0;
+    padding: 3px;
+    border: solid 3px var(--blue-dark);
+    border-radius: 15px;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+
+.pista{
+    height: 100px;
+}
+
+#pistaCinco{
+    height: 200px;
+    border-radius: 15px;
+}
