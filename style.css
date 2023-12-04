@@ -38,13 +38,10 @@
 }
 
 body{
-    background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+    background-color: var(--blue-light);
     /*Con esta linea de height hago que el degradado ocupe toda la altura disponible*/
     height: 100vh;
     font-family: 'Barlow Condensed', sans-serif;
-}
-
-body{
     display:  flex;
     align-items: center;
     justify-content: center;
