@@ -12,27 +12,27 @@ pistaUno.addEventListener('click', ()=>{
 
 pistaDos.addEventListener('click', ()=>{
     if (uno) {
-        pistaDos.src = "img/saxo.png";
+        pistaDos.src = "img/shiquito.png";
         dos = true;
     }
 });
 
 pistaTres.addEventListener('click', ()=>{
     if (uno && dos) {
-        pistaTres.  src = "img/vader.png";
+        pistaTres.  src = "img/pc.png";
         tres = true;
     }
 });
 
 pistaCuatro.addEventListener('click', ()=>{
     if (uno && dos && tres) {
-        pistaCuatro.src = "img/river.png";
+        pistaCuatro.src = "img/lentes.png";
         cuatro = true;
     }
 });
 
 pistaFinal.addEventListener('click', ()=>{
     if (uno && dos && tres && cuatro) {
-        pistaFinal.src = "img/final.jpeg";
+        pistaFinal.src = "img/vani.png";
     }
 });
